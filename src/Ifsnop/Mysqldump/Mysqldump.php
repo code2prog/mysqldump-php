@@ -1128,7 +1128,7 @@ class Mysqldump
         $condition = $this->getTableWhere($tableName);
 
         if ($condition) {
-            $stmt .= " WHERE {$condition}";
+             $stmt .= " {$condition}";
         }
 
         $limit = $this->getTableLimit($tableName);
